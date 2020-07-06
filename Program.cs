@@ -27,6 +27,9 @@ namespace ProjetoWhatsapp
             List<Contato> lista = new List<Contato>();
 
             agenda.Listar();
+            //foreach(Contato c in agenda.Listar()){
+                //System.Console.WriteLine($"Nome: {c.Nome} / Tel: {c.Numero}");
+            //}
 
             Mensagem mensagem = new Mensagem();
             mensagem.Texto = "Olá";

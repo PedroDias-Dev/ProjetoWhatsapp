@@ -57,8 +57,24 @@ namespace ProjetoWhatsapp
         }
 
         public void Listar()
-        {
-            //int counter = 0;
+        {   
+            // retorna criando variavel
+            //Unhandled exception. System.IndexOutOfRangeException: Index was outside the bounds of the array.
+
+            //string[] linhas = File.ReadAllLines(PATH);
+
+            //foreach (string linha in linhas){
+                //string[] linhas = File.ReadAllLines(PATH);
+                //string[] dado = linha.Split(";");
+
+                //Contato c = new Contato( dado[0], dado[1]);
+                //contatos.Add(c);
+            //}
+            
+            //return contatos;
+
+            // retorna lendo as linhas de contato no csv
+            int counter = 0;
             //throw new System.NotImplementedException();
             System.Console.WriteLine("-- Esses sao os contatos na sua agenda:");
             List<string> linhas = new List<string>();
@@ -67,9 +83,9 @@ namespace ProjetoWhatsapp
                 string linha;
                 while((linha = arquivo.ReadLine()) != null){
                     System.Console.WriteLine(linha);  
-                    //counter++; 
+                    counter++; 
                 }    
-            }           
+            }      
         }
 
 
